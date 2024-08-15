@@ -1,0 +1,35 @@
+# Python
+__pycache__
+*.pyc
+*.egg-info
+dist
+.venv
+
+# Log
+*.log
+*.log.*
+*.json
+
+# Editor
+.idea
+*.swp
+
+# Other
+.DS_Store
+wandb
+output
+
+# Data
+*.pkl
+*.csv
+
+# Build
+build
+
+# Image data
+serve_images
+val2014
+vqa_examples
+
+# Data
+data
