@@ -1,0 +1,12 @@
+#!/bin/bash
+case "$1" in
+    "connect"|"diff"|"merge"|"mcommit"|"package"|"workspace"|"")
+        DIR=$(cd "$(dirname "$0")";pwd)
+        java -cp "$DIR/dwf-cli.jar" DwfGit $*
+        exit $?
+        ;;
+    *)
+        git "$@"
+        exit $?
+        ;;
+esac

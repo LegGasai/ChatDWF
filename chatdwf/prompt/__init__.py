@@ -1,0 +1,1 @@
+from chatdwf.model.graph import ModelComponent
