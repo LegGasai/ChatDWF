@@ -18,9 +18,8 @@ def dwf_connect(host: str, username: str, password: str):
     result = subprocess.run([command_path] + args, capture_output=True, text=True, cwd=target_dir)
     return result
 
-# todo
-def dwf_download():
-    args = ["workspace", "--install"]
+def dwf_graph():
+    args = ["workspace", "--graph"]
     result = subprocess.run([command_path] + args, capture_output=True, text=True, cwd=target_dir)
     return result
 
@@ -29,3 +28,5 @@ def check_params(param, name):
     if not param:
         raise ValueError(f'{name} cannot be None')
 
+
+dwf_graph()

@@ -33,3 +33,7 @@ vqa_examples
 
 # Data
 data
+
+# Scripts
+scripts/.dwf
+scripts/*.json
